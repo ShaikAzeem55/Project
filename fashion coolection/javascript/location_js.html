@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+    <style>
+
+    </style>
+    <script>
+        function callvalue(getvalue) {
+            switch (getvalue) {
+                case 'AP':
+                    alert(getvalue);
+                    var papulation = '24247563434';
+                    var area = '4356accrs';
+                    var captal = '--------';
+                    var map = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDMBHWj0chJI9Ynhw76uLhWHnvZO5NyS6H_2OSF_0rQ&s';
+                    break;
+                case 'TN':
+                    alert(getvalue);
+                    var papulation = '246885';
+                    var area = '43435accrs';
+                    var captal = 'HYD';
+                    var map = 'https://i.pinimg.com/564x/4e/e9/c0/4ee9c0fbdfe8d8c4a0d3f862bcff37d9.jpg';
+                    break;
+                case 'TM':
+                    alert(getvalue);
+                    var papulation = '246885';
+                    var area = '43435accrs';
+                    var captal = 'HYD';
+                    var map = 'https://www.tn.gov.in/sites/default/files/tndistrict_1.png';
+                    break;
+                case "cricket":
+                    alert(getvalue);
+                    var papulation = '246885';
+                    var area = '43435accrs';
+                    var captal = 'csk';
+                    var map = 'https://www.teez.in/cdn/shop/products/Men_s-Chennai-Super-Kings-Fan-Cotton-T-shirt-Yellow_large.jpg?v=1584074295';
+                    break;
+                default:
+                    document.write("enter the correct value");
+            }
+            document.getElementById('getimg').src = map;
+            document.getElementById('getcaptial').innerHTML = captal;
+            document.getElementById('getpapulation').innerHTML = papulation;
+            document.getElementById('getarea').innerHTML = area;
+        }
+    </script>
+</HEAD>
+
+<BODY>
+    <SELECT STYLE="WIDTH:300PX;" onchange="callvalue(this.value)">
+        <option>select the value</option>
+    <OPTION>cricket</OPTION>
+    <OPTION>AP</OPTION>
+    <OPTION>TN</OPTION>
+    <OPTION>TM</OPTION>
+    <OPTION>MM</OPTION>
+    
+    </SELECT>
+    <div>
+        <div class="div_right">
+            <img src="" id="getimg">
+        </div>
+        <div>
+            <span id="getcaptial">  </span><br>
+            <span id="getpapulation"></span><br>
+            <span id="getarea"></span><br>
+            <span id="dummyresult">welcomeL</span>
+        </div>
+    </div>
+</BODY>
+
+</HTML>

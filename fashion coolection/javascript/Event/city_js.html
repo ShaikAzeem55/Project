@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        /* CSS for Dropdown Menu */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropbtn {
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-color: pink;
+            color: green;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: rgb(18, 17, 17);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: hsl(0, 80%, 47%);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: hsl(208, 72%, 41%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML for Dropdown Menu -->
+    <div class="dropdown">
+        <button class="dropbtn">city</button>
+        <div class="dropdown-content">
+            <a id="bngl" href="#">banglore</a>
+            <a id="cs" href="#">chennai</a>
+            <a id="kk" href="#">kolkata</a>
+            <a id="nd" href="#"> new delhi</a>
+            <a id="aa" href="#">amaravathi</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("bngl").addEventListener('click', function() {
+            alert("this is banglore");
+        }, true);
+        document.getElementById("cs").addEventListener('click', function() {
+            alert("this is chennai");
+        }, true);
+        document.getElementById("kk").addEventListener('click', function() {
+            alert("this is kolkata  ");
+        }, true);
+        document.getElementById("aa").addEventListener('click', function() {
+            alert("this is amaravathi");
+        }, true);
+        document.getElementById("nd").addEventListener('click', function() {
+            alert("this is new delhi");
+        }, true);
+    </script>
+</body>
+
+</html>

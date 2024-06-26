@@ -1,0 +1,116 @@
+.secheader {
+    background-color: rgba(198, 247, 232, 0.909);
+    border: solid rgb(5, 104, 4);
+    border: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    border: solid white;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(2 v, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+}
+
+.header figure img {
+    width: 100px;
+    position: relative;
+    right: 70px;
+}
+
+.home input {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+    border: white;
+}
+
+.icons>i {
+    height: 40px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    padding-right: 50px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.body {
+    margin: 30px;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.body h2 {
+    color: rgba(69, 139, 69, 0.925);
+}
+
+.body button {
+    background-color: rgba(69, 139, 69, 0.925);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.body button:hover {
+    background-color: rgb(239, 235, 235);
+    color: black;
+    border: 2px solid green;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content>div {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.aboutus,
+.help {
+    padding: 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.social_media_links ul img {
+    padding: 10px
+}
+
+.social_media_links h4 {
+    padding-right: 5px;
+}
+
+main p:hover {
+    background-color: aqua;
+    border: solid 10px aqua;
+    border-radius: 10px;
+}

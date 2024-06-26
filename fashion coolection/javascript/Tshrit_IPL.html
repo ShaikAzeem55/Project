@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> ipl-tshrit </title>
+    <style>
+        #select {
+            width: 10%;
+        }
+    </style>
+
+    <body>
+        <label for="select"> select the team</label>
+        <select id="select" name="select" onchange="tshrit()">
+            <option >select the team</option>
+            <option >csk</option>
+            <option >rcb</option>
+            <option >kkr</option>
+            <option >pbks</option>
+        </select>
+        <section>
+            <div id="cost"></div>
+            <div id="root"></div>
+            <div></div>
+        </section>
+        <script>
+            function tshrit() {
+                var shrit = document.getElementById('select').value;
+                switch (shrit) {
+                    case "csk":
+                        //document.write('csk');
+                        var price = '800';
+                        var area = 'chennai';
+                        break;
+                    case "rcb":
+                        //  document.write('rcb');
+                        var price = '700';
+                        var area = 'banglore';
+                        break;
+                    case "kkr":
+                        //  document.write('kkr');
+                        var price = '600';
+                        var area = 'kolkata';
+                        break;
+                    case "pbks":
+                        // document.write('pbks');
+                        var price = '600';
+                        var area = 'punjab';
+                        break;
+                    default:
+                        document.write("enter correct team");
+                }
+                document.getElementById('cost').innerHTML = price;
+                document.getElementById('root').innerHTML = area;
+            }
+        </script>
+    </body>
+
+
+</html>

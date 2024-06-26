@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript header</title>
+    <style>
+        header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        
+        .logo {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+        }
+        
+        .logo img {
+            width: 100px;
+        }
+        
+        H2 {
+            color: green;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 18%;
+            text-shadow: 2px 1p x;
+        }
+        
+        div {
+            display: flex;
+            width: 80%;
+            height: 30%;
+            justify-content: space-between;
+        }
+        
+        a {
+            text-decoration: none;
+            color: blue;
+            margin-top: 10%;
+            font-weight: bold;
+        }
+        
+        #sing {
+            color: white;
+            border: solid #2a0cec;
+            background-color: #2a0cec;
+            border-radius: 20px;
+            margin: 30px 20px 20px 20px;
+            padding: 4% 4% 6% 4%;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <section class="logo">
+            <figure>
+                <img id="img" src="./online.jpg" alt="logo">
+            </figure>
+            <H2>E-Class</H2>
+        </section>
+        <div class="types">
+            <a href="#" id="home"> </a>
+            <a href="#" id="CATEGORY"></a>
+            <a href="#" id="COURSE"></a>
+            <a href="#" id="BLOG"></a>
+            <a href="#" id="sing"> </a>
+        </div>
+    </header>
+
+
+    <script>
+        document.getElementById("home").innerHTML = "HOME";
+        document.getElementById("CATEGORY").innerHTML = "CATEGORY";
+        document.getElementById("COURSE").innerHTML = "COURSE";
+        document.getElementById("BLOG").innerHTML = "BLOG";
+        document.getElementById("sing").innerHTML = "SING UP";
+    </script>
+</body>
+
+
+
+
+</html>
